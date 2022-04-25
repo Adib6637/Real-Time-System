@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  24 APR 2022 19:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  25 APR 2022 04:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,73 +302,27 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (abstract.tex)
-
-LaTeX Warning: Reference `AA' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Reference `SCM' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Reference `eq' on page 1 undefined on input line 88.
-
-
-LaTeX Warning: Reference `eq' on page 1 undefined on input line 88.
-
-
-LaTeX Warning: Reference `eq' on page 1 undefined on input line 88.
-
-
-LaTeX Warning: Reference `eq' on page 1 undefined on input line 89.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
-3.
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1{C:/Users/sheik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+) (abstract.tex) [1{C:/Users/sheik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex
+.map}
 
 
 ]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+61.
 
-LaTeX Warning: Citation `b7' on page 2 undefined on input line 142.
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [2]
 
-
-LaTeX Warning: Reference `fig' on page 2 undefined on input line 178.
+LaTeX Warning: Reference `fig' on page 3 undefined on input line 246.
 
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 2
-05.
+73.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
- [2]
-
-LaTeX Warning: Citation `b1' on page 3 undefined on input line 218.
-
-
-LaTeX Warning: Citation `b2' on page 3 undefined on input line 219.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 220.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 220.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 220.
-
-
-LaTeX Warning: Citation `b3' on page 3 undefined on input line 221.
-
-
-LaTeX Warning: Citation `b4' on page 3 undefined on input line 229.
-
-
-LaTeX Warning: Citation `b5' on page 3 undefined on input line 230.
-
-
-LaTeX Warning: Citation `b6' on page 3 undefined on input line 235.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
 
 
 ** Conference Paper **
@@ -381,20 +335,15 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (main.aux)
+[3] (main.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  4231 strings out of 478582
  65367 string characters out of 2854159
- 375415 words of memory out of 3000000
+ 373475 words of memory out of 3000000
  22372 multiletter control sequences out of 15000+600000
  515608 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -409,7 +358,7 @@ X/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/t
 imes/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/
 Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 138763 bytes).
+Output written on main.pdf (3 pages, 138710 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
