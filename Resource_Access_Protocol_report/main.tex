@@ -5,8 +5,11 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
+\graphicspath{ {images/} }
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{stackengine}
+\stackMath
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -27,51 +30,39 @@ sheikh-muhammad-adib.bin-sh-abu-bakar@stud.hshl.de}
 \maketitle
 \input{abstract.tex}
 
-
 \begin{IEEEkeywords}
 real time system, resource, protocol 
 \end{IEEEkeywords}
 
-\section{Introduction}
 \input{introduction.tex}
 %Real Time System
-%Characteristics
+%predictibility
 
-\section{Basic Concept}
-\input{basic_concept.tex}
-%Resource
-%Process
-%Task Scheduling
+\input{task_scheduling.tex}
+%task
+%scheduling
+%classification
+%-preemtion
+%-non-preemtion
+%-dynamic
+%-static
+%-online
+%periodic
+%constraint
+%-timming
+%-resource
+%schedubility test
 
-\section{Real Time Synchronization}
-\input{synchronization.tex}
-%Priority Inversion
-%Performing Predictability
+\input{problem.tex}
+%protocol invention
 
-\section{Resource Access Protocol}
+
 \input{rap.tex}
 %Introduction
 %Model Classification
 %Terminology and Assumption
 
-\section{Non-Preemptable Protocol}
-\input{non_preemtable.tex}
-%kernelized Monitor protocol
-
-\section{Preemptable Protocol}
-\input{preemtable.tex}
-%Basic Priority Protocol
-%Basic Priority Inheritance Protocol
-%Priority Ceiliing Protcol
-
-\section{Restartable protocol}
-\input{restartable.tex}
-%Restartable Critical Section protocol
-
-
-\section{Structure of Synchronization Model}
-
-\section{Discussion}
+\section{Compare}
 
 \section{Conclusion}
 
@@ -80,15 +71,22 @@ real time system, resource, protocol
 I, Sheikh Muhammad Adib 
 
 \begin{thebibliography}{00}
-\bibitem{b1} G. C. Buttazzo, "Hard real-time computing systems: Predictable scheduling algorithms and applications". New York: Springer, 2011. 
 
-\bibitem{b2} L. Sha, R. Rajkumar and J. P. Lehoczky, "Priority inheritance protocols: an approach to real-time synchronization," in IEEE Transactions on Computers, vol. 39, no. 9, pp. 1175-1185, Sept. 1990, doi: 10.1109/12.57058.
+\bibitem{b1}"IEEE Standard for a Real-Time Operating System (RTOS) for Small-Scale Embedded Systems," in IEEE Std 2050-2018 , vol., no., pp.1-333, 24 Aug. 2018, doi: 10.1109/IEEESTD.2018.8445674.
 
-\bibitem{b3} L. M. dos Santos, G. Gracioli, T. Kloda and M. Caccamo, "On the Design and Implementation of Real-Time Resource Access Protocols," 2020 X Brazilian Symposium on Computing Systems Engineering (SBESC), 2020, pp. 1-8, doi: 10.1109/SBESC51047.2020.9277858.
+\bibitem{b2} “Real-time systems overview and examples,” Intel. [Online]. Available: https://www.intel.com/content/www/us/en/robotics/real-time-systems.html. [Accessed: 04-May-2022]. 
 
-\bibitem{b4} Rajkumar, Raj and Juvva, Kanaka and Molano, Anastasio and Oikawa, Shuichi "Resource Kernels: A Resource-centric Approach to Real-Time and Multimedia Systems" 1997 Proceedings of SPIE - The International Society for Optical Engineering. 3310. 10.1117/12.298417. 
+\bibitem{b3}“Characteristics of real-time systems,” GeeksforGeeks, 04-May-2020. [Online]. Available: https://www.geeksforgeeks.org/characteristics-of-real-time-systems/. [Accessed: 04-Apr-2022]. 
 
-\bibitem{b5} Nakajima, Tatsuo and Tokuda, Hideyuki, "Real-Time Synchronization in Real-Time Mach", 1994 
+\bibitem{b4} “Terminology and notation,” Terminology and Notation |. [Online]. Available: https://cmte.ieee.org/tcrts/education/terminology-and-notation/. [Accessed: 04-Apr-2022]. 
+
+\bibitem{b5} G. C. Buttazzo, "Hard real-time computing systems: Predictable scheduling algorithms and applications". New York: Springer, 2011. 
+
+\bibitem{b6} L. Sha, R. Rajkumar and J. P. Lehoczky, "Priority inheritance protocols: an approach to real-time synchronization," in IEEE Transactions on Computers, vol. 39, no. 9, pp. 1175-1185, Sept. 1990, doi: 10.1109/12.57058.
+
+\bibitem{b7} Rajkumar, Raj and Juvva, Kanaka and Molano, Anastasio and Oikawa, Shuichi "Resource Kernels: A Resource-centric Approach to Real-Time and Multimedia Systems" 1997 Proceedings of SPIE - The International Society for Optical Engineering. 3310. 10.1117/12.298417. 
+
+\bibitem{b8} Nakajima, Tatsuo and Tokuda, Hideyuki, "Real-Time Synchronization in Real-Time Mach", 1994 
 \end{thebibliography}
 
 

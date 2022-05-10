@@ -1,0 +1,5 @@
+\section{Invention Priority}
+
+In theory, a set of task that are schduable will be executed upon on its arriving time and preempted if a task with higher priority arrive. That will not be always true if we apply resource constraint. The problem arrive when  a scheduler want to preempt a lower task that currently accessing a mutually exclusive resource R and want to execute higher priority task that also want to use the resource. Since the lower priority task didn't yet produce signal(S) primitive where S is the binary semaphore, the higher priority task will be block. This phenomenon called priority invention. The implication from this phenomenon is that it will cause unbounded delay on execution of task with higher priority and reduce the predictability of the system. The priority invention is illustrated in figure \ref{fig:Example_in_which_NPP_causes_unnecessary_blocking_on_T1} where $ \tau_{1} $ have the highest priority.
+
+Here is where we need resource access protocol to make some adjustment to the scheduler so that the implication of invention priority could be reduce which we going to discuss in incoming sections.

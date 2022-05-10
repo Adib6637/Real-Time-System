@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  1 MAY 2022 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  11 MAY 2022 00:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -246,41 +246,83 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
+(C:\Program Files\MiKTeX\tex/latex/stackengine\stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count282
+)
+(C:\Program Files\MiKTeX\tex/latex/listofitems\listofitems.sty
+(C:\Program Files\MiKTeX\tex/generic/listofitems\listofitems.tex
+\loi_cnt_foreach_nest=\count283
+\loi_nestcnt=\count284
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count285
+\calc@Bcount=\count286
+\calc@Adimen=\dimen173
+\calc@Bdimen=\dimen174
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count287
+\calc@Cskip=\skip57
+)
+\c@@stackindex=\count288
+\@boxshift=\skip58
+\stack@tmplength=\skip59
+\temp@stkl=\skip60
+\@stackedboxwidth=\skip61
+\@addedbox=\box54
+\@anchorbox=\box55
+\@insetbox=\box56
+\se@backgroundbox=\box57
+\stackedbox=\box58
+\@centerbox=\box59
+\c@ROWcellindex@=\count289
+)
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count282
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box60
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
-\scratchdimen=\dimen173
-\scratchbox=\box55
-\nofMPsegments=\count284
-\nofMParguments=\count285
+\scratchcounter=\count291
+\scratchdimen=\dimen175
+\scratchbox=\box61
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count286
-\MPscratchDim=\dimen174
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen176
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks24
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -290,25 +332,271 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 27.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (abstract.tex)
-(introduction.tex) (basic_concept.tex) (synchronization.tex) (rap.tex)
-(non_preemtable.tex) (preemtable.tex) (restartable.tex) [1{C:/Users/sheik/AppDa
-ta/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+(introduction.tex) (task_scheduling.tex [1{C:/Users/sheik/AppData/Local/MiKTeX/
+fonts/map/pdftex/pdftex.map}
 
 
 ]
+<images//periodic.png, id=10, 610.28pt x 189.20688pt>
+File: images//periodic.png Graphic file (type png)
+<use images//periodic.png>
+Package pdftex.def Info: images//periodic.png  used on input line 81.
+(pdftex.def)             Requested size: 258.0pt x 79.99178pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 81--82
+ [][] 
+ []
+
+<images//Two_tasks_sharing.png, id=12, 709.14937pt x 369.38pt>
+File: images//Two_tasks_sharing.png Graphic file (type png)
+<use images//Two_tasks_sharing.png>
+Package pdftex.def Info: images//Two_tasks_sharing.png  used on input line 124.
+
+(pdftex.def)             Requested size: 258.0pt x 134.38576pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 124--125
+ [][] 
+ []
+
+<images//Example_of_schedule_creating_data_inconsistency.png, id=13, 748.7975pt
+ x 300.12125pt>
+File: images//Example_of_schedule_creating_data_inconsistency.png Graphic file 
+(type png)
+<use images//Example_of_schedule_creating_data_inconsistency.png>
+Package pdftex.def Info: images//Example_of_schedule_creating_data_inconsistenc
+y.png  used on input line 131.
+(pdftex.def)             Requested size: 258.0pt x 103.40913pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./images//periodic.png> <./images//Two_tasks_sharing.png>]
+<images//Structure.png, id=21, 705.13437pt x 441.14813pt>
+File: images//Structure.png Graphic file (type png)
+<use images//Structure.png>
+Package pdftex.def Info: images//Structure.png  used on input line 140.
+(pdftex.def)             Requested size: 258.0pt x 161.41151pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 140--142
+ [][] 
+ []
+
+<images//semaphore.png, id=22, 727.21687pt x 321.2pt>
+File: images//semaphore.png Graphic file (type png)
+<use images//semaphore.png>
+Package pdftex.def Info: images//semaphore.png  used on input line 148.
+(pdftex.def)             Requested size: 258.0pt x 113.95573pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 148--149
+ [][] 
+ []
+
+<images//state.png, id=23, 861.2175pt x 353.82187pt>
+File: images//state.png Graphic file (type png)
+<use images//state.png>
+Package pdftex.def Info: images//state.png  used on input line 155.
+(pdftex.def)             Requested size: 258.0pt x 105.9962pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 155--156
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (problem.tex) (rap.tex [3 <./images//Example_of_schedule_creating_data_incons
+istency.png> <./images//Structure.png> <./images//semaphore.png> <./images//sta
+te.png>] (npp.tex
+<images//An_example_of_priority_inversion.png, id=33, 569.62813pt x 395.4775pt>
+
+File: images//An_example_of_priority_inversion.png Graphic file (type png)
+<use images//An_example_of_priority_inversion.png>
+Package pdftex.def Info: images//An_example_of_priority_inversion.png  used on 
+input line 14.
+(pdftex.def)             Requested size: 258.0pt x 179.12184pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+<images//Example_of_NPP_preventing_priority_inversion.png, id=34, 611.78563pt x
+ 373.395pt>
+File: images//Example_of_NPP_preventing_priority_inversion.png Graphic file (ty
+pe png)
+<use images//Example_of_NPP_preventing_priority_inversion.png>
+Package pdftex.def Info: images//Example_of_NPP_preventing_priority_inversion.p
+ng  used on input line 21.
+(pdftex.def)             Requested size: 258.0pt x 157.46295pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 21--22
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images//Example_in_which_NPP_causes_unnecessary_blocking_on_T1.png, id=35, 758
+.835pt x 384.43625pt>
+File: images//Example_in_which_NPP_causes_unnecessary_blocking_on_T1.png Graphi
+c file (type png)
+<use images//Example_in_which_NPP_causes_unnecessary_blocking_on_T1.png>
+Package pdftex.def Info: images//Example_in_which_NPP_causes_unnecessary_blocki
+ng_on_T1.png  used on input line 48.
+(pdftex.def)             Requested size: 258.0pt x 130.70659pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 48--49
+ [][] 
+ []
+
+) (hlp.tex [4 <./images//An_example_of_priority_inversion.png> <./images//Examp
+le_of_NPP_preventing_priority_inversion.png> <./images//Example_in_which_NPP_ca
+uses_unnecessary_blocking_on_T1.png>]
+
+LaTeX Warning: Reference `fig: Example_of_schedule_under_HLP' on page 5 undefin
+ed on input line 17.
+
+<images//Example_of_schedule_under_HLP.png, id=46, 790.45313pt x 559.08875pt>
+File: images//Example_of_schedule_under_HLP.png Graphic file (type png)
+<use images//Example_of_schedule_under_HLP.png>
+Package pdftex.def Info: images//Example_of_schedule_under_HLP.png  used on inp
+ut line 21.
+(pdftex.def)             Requested size: 258.0pt x 182.48653pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 21--22
+ [][] 
+ []
+
+) (pip.tex
+
+LaTeX Warning: Reference `fig:pip' on page 5 undefined on input line 7.
+
+<images//pip.png, id=47, 667.49374pt x 444.66125pt>
+File: images//pip.png Graphic file (type png)
+<use images//pip.png>
+Package pdftex.def Info: images//pip.png  used on input line 10.
+(pdftex.def)             Requested size: 258.0pt x 171.87021pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:pip_nested' on page 5 undefined on input line 15.
+
+
+<images//pip_nested.png, id=48, 668.99937pt x 470.25688pt>
+File: images//pip_nested.png Graphic file (type png)
+<use images//pip_nested.png>
+Package pdftex.def Info: images//pip_nested.png  used on input line 18.
+(pdftex.def)             Requested size: 258.0pt x 181.36159pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 18--19
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:tpi' on page 5 undefined on input line 23.
+
+<images//tpi.png, id=49, 686.565pt x 436.63126pt>
+File: images//tpi.png Graphic file (type png)
+<use images//tpi.png>
+Package pdftex.def Info: images//tpi.png  used on input line 26.
+(pdftex.def)             Requested size: 258.0pt x 164.0761pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 26--27
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:Example_of_chained_blocking' on page 5 undefined 
+on input line 56.
+
+<images//Example_of_chained_blocking.png, id=50, 667.49374pt x 288.07625pt>
+File: images//Example_of_chained_blocking.png Graphic file (type png)
+<use images//Example_of_chained_blocking.png>
+Package pdftex.def Info: images//Example_of_chained_blocking.png  used on input
+ line 59.
+(pdftex.def)             Requested size: 258.0pt x 111.34706pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:Example_of_deadlock' on page 5 undefined on input
+ line 66.
+
+<images//Example_of_deadlock.png, id=51, 1116.17pt x 498.86375pt>
+File: images//Example_of_deadlock.png Graphic file (type png)
+<use images//Example_of_deadlock.png>
+Package pdftex.def Info: images//Example_of_deadlock.png  used on input line 69
+.
+(pdftex.def)             Requested size: 258.0pt x 115.30714pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (pcp.tex [5 <./images//Example_of_schedule_under_HLP.png> <./images//pip.png>
+]))
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+[]\OT1/ptm/m/n/8 \Real-time sys-tems overview and ex-am-ples," In-tel. [On-line
+].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\OT1/ptm/m/n/8 Avail-able: https://www.intel.com/content/www/us/en/robotics/rea
+l-
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 79--80
+\OT1/ptm/m/n/8 [On-line]. Avail-able: https://www.geeksforgeeks.org/characteris
+tics-of-
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 81--82
+[]\OT1/ptm/m/n/8 \Terminology and no-ta-tion," Ter-mi-nol-ogy and No-ta-tion |.
+ [On-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 81--82
+\OT1/ptm/m/n/8 line]. Avail-able: https://cmte.ieee.org/tcrts/education/termino
+logy-and-
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -320,24 +608,39 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[6 <./images//pip_nested.png> <./images//tpi.png> <./images//Example_of_chained
+_blocking.png> <./images//Example_of_deadlock.png>] (main.aux)
 
-] (main.aux) ) 
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4175 strings out of 478582
- 65281 string characters out of 2854159
- 369421 words of memory out of 3000000
- 22312 multiletter control sequences out of 15000+600000
- 503958 words of font info for 93 fonts, out of 8000000 for 9000
+ 5114 strings out of 478582
+ 82355 string characters out of 2854159
+ 386262 words of memory out of 3000000
+ 23222 multiletter control sequences out of 15000+600000
+ 508952 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,62p,1202b,332s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program 
-Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a
-.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 62670 bytes).
+ 55i,11n,62p,1314b,332s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts
+/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
+r8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 847990 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
