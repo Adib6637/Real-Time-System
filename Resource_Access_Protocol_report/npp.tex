@@ -29,15 +29,35 @@ $p_{i}(R_{k})=\underset{h}{\mathrm{max}} \{P_{h}\}  $
 	The total of critical section of lower priority task $\tau_{j}$ blocking higher priority task $\tau_{i}$ is
 
 \begin{center}
-$ \gamma_{i}=\{Z_{j,k} | P_{j}<P_{i}, k=1,...,m \} $
+$ \gamma_{i}=\{Z_{j,k} | P_{j}<P_{i}, k=1,...,m \} $ \cite{b5}
 \end{center}
 
 Hence the total duration highest priority task is blocked is
 
 \begin{center}
 
-$B_{i}(R_{k})=\underset{j,k}{\mathrm{max}} \{ \delta_{j,k}-1 | Z_{j,k} \in \gamma_{i}\}  $
+$B_{i}(R_{k})=\underset{j,k}{\mathrm{max}} \{ \delta_{j,k}-1 | Z_{j,k} \in \gamma_{i}\}  $ \cite{b5}
 \end{center}
+
+\subsection{Implementation Strategies}
+
+As state by \cite{b6} - All commercial RTOSs have a means for beginning and ending a critical section. Invoking this Scheduler 
+operation prevents all task switching from occurring during the critical section. If we write our own RTOS, the most common way to do this is to set the Disable Interrupts bit on our processor's flags register. The precise details of this vary, naturally, depending on the specific processor.
+
+\subsection{Sample Model}
+
+The following example model is totally taken from \cite{b6}.
+
+An example of the use of this pattern is shown in Figure \ref{fig:npp_model}. This example contains three tasks: Device Test (highest priority), Motor Control (medium priority), and Data Processing (lowest priority). Device Test and Data Processing share a resource called Sensor, whereas Motor Control has its own resource called Motor. 
+
+The scenario starts off with the lowest-priority task, Data Processing, accessing the resource that starts up a critical section. During this critical section both the Motor Control task and the Device Test task become ready to run but cannot because task switching is disabled. When the call to the resource is almost done, the Sensor.gimme() operation makes a call to the scheduler to end the critical section. The scenario shows three critical sections, one for each of the running tasks. Finally, at the end, the lowest-priority task is allowed to complete its work and then returns to its Idle state.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{npp_model}
+    \caption{Sample Model for Non-Preemptive Protocol \cite{b6}}
+    \label{fig:npp_model}
+\end{figure}
 
 \subsection{Problem Arise}
 

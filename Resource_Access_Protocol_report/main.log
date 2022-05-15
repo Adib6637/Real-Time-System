@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  11 MAY 2022 00:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=latex 2022.5.15)  15 MAY 2022 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
+-- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen141
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen142
@@ -218,10 +218,10 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: dvips.def on input line 107.
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
@@ -235,9 +235,8 @@ Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Driver file: dvips.def on input line 227.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
@@ -288,10 +287,15 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \@centerbox=\box59
 \c@ROWcellindex@=\count289
 )
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count290
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-dvips.def
+File: l3backend-dvips.def 2022-02-07 L3 backend support: dvips
 \l__pdf_internal_box=\box60
+\g__pdf_backend_object_int=\count290
+\l__pdf_backend_content_box=\box61
+\l__pdf_backend_model_box=\box62
+\g__pdf_backend_annotation_int=\count291
+\g__pdf_backend_link_int=\count292
+\g__pdf_backend_link_sf_int=\count293
 ) (main.aux)
 \openout1 = `main.aux'.
 
@@ -311,30 +315,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
-(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen175
-\scratchbox=\box61
-\nofMPsegments=\count292
-\nofMParguments=\count293
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen176
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks24
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 30.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
-
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -345,254 +327,227 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (abstract.tex)
-(introduction.tex) (task_scheduling.tex [1{C:/Users/sheik/AppData/Local/MiKTeX/
-fonts/map/pdftex/pdftex.map}
+(introduction.tex) (task_scheduling.tex [1
 
 
 ]
-<images//periodic.png, id=10, 610.28pt x 189.20688pt>
-File: images//periodic.png Graphic file (type png)
-<use images//periodic.png>
-Package pdftex.def Info: images//periodic.png  used on input line 81.
-(pdftex.def)             Requested size: 258.0pt x 79.99178pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 81--82
- [][] 
- []
+! LaTeX Error: File `periodic' not found.
 
-<images//Two_tasks_sharing.png, id=12, 709.14937pt x 369.38pt>
-File: images//Two_tasks_sharing.png Graphic file (type png)
-<use images//Two_tasks_sharing.png>
-Package pdftex.def Info: images//Two_tasks_sharing.png  used on input line 124.
-
-(pdftex.def)             Requested size: 258.0pt x 134.38576pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 124--125
- [][] 
- []
-
-<images//Example_of_schedule_creating_data_inconsistency.png, id=13, 748.7975pt
- x 300.12125pt>
-File: images//Example_of_schedule_creating_data_inconsistency.png Graphic file 
-(type png)
-<use images//Example_of_schedule_creating_data_inconsistency.png>
-Package pdftex.def Info: images//Example_of_schedule_creating_data_inconsistenc
-y.png  used on input line 131.
-(pdftex.def)             Requested size: 258.0pt x 103.40913pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 131--132
- [][] 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...udegraphics[width=0.5\textwidth]{periodic}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+! LaTeX Error: File `Two_tasks_sharing' not found.
 
-[2 <./images//periodic.png> <./images//Two_tasks_sharing.png>]
-<images//Structure.png, id=21, 705.13437pt x 441.14813pt>
-File: images//Structure.png Graphic file (type png)
-<use images//Structure.png>
-Package pdftex.def Info: images//Structure.png  used on input line 140.
-(pdftex.def)             Requested size: 258.0pt x 161.41151pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 140--142
- [][] 
- []
-
-<images//semaphore.png, id=22, 727.21687pt x 321.2pt>
-File: images//semaphore.png Graphic file (type png)
-<use images//semaphore.png>
-Package pdftex.def Info: images//semaphore.png  used on input line 148.
-(pdftex.def)             Requested size: 258.0pt x 113.95573pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 148--149
- [][] 
- []
-
-<images//state.png, id=23, 861.2175pt x 353.82187pt>
-File: images//state.png Graphic file (type png)
-<use images//state.png>
-Package pdftex.def Info: images//state.png  used on input line 155.
-(pdftex.def)             Requested size: 258.0pt x 105.9962pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 155--156
- [][] 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...s[width=0.5\textwidth]{Two_tasks_sharing}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+! LaTeX Error: File `Example_of_schedule_creating_data_inconsistency' not found
+.
 
-) (problem.tex) (rap.tex [3 <./images//Example_of_schedule_creating_data_incons
-istency.png> <./images//Structure.png> <./images//semaphore.png> <./images//sta
-te.png>] (npp.tex
-<images//An_example_of_priority_inversion.png, id=33, 569.62813pt x 395.4775pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 ..._of_schedule_creating_data_inconsistency}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-File: images//An_example_of_priority_inversion.png Graphic file (type png)
-<use images//An_example_of_priority_inversion.png>
-Package pdftex.def Info: images//An_example_of_priority_inversion.png  used on 
-input line 14.
-(pdftex.def)             Requested size: 258.0pt x 179.12184pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 14--15
- [][] 
- []
+! LaTeX Error: File `Structure' not found.
 
-<images//Example_of_NPP_preventing_priority_inversion.png, id=34, 611.78563pt x
- 373.395pt>
-File: images//Example_of_NPP_preventing_priority_inversion.png Graphic file (ty
-pe png)
-<use images//Example_of_NPP_preventing_priority_inversion.png>
-Package pdftex.def Info: images//Example_of_NPP_preventing_priority_inversion.p
-ng  used on input line 21.
-(pdftex.def)             Requested size: 258.0pt x 157.46295pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 ...egraphics[width=0.5\textwidth]{Structure}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 21--22
- [][] 
- []
+
+! LaTeX Error: File `semaphore' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 ...egraphics[width=0.5\textwidth]{semaphore}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `state' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ...cludegraphics[width=0.5\textwidth]{state}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images//Example_in_which_NPP_causes_unnecessary_blocking_on_T1.png, id=35, 758
-.835pt x 384.43625pt>
-File: images//Example_in_which_NPP_causes_unnecessary_blocking_on_T1.png Graphi
-c file (type png)
-<use images//Example_in_which_NPP_causes_unnecessary_blocking_on_T1.png>
-Package pdftex.def Info: images//Example_in_which_NPP_causes_unnecessary_blocki
-ng_on_T1.png  used on input line 48.
-(pdftex.def)             Requested size: 258.0pt x 130.70659pt.
+[2]) (problem.tex) (rap.tex (npp.tex
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 48--49
- [][] 
- []
+! LaTeX Error: File `An_example_of_priority_inversion' not found.
 
-) (hlp.tex [4 <./images//An_example_of_priority_inversion.png> <./images//Examp
-le_of_NPP_preventing_priority_inversion.png> <./images//Example_in_which_NPP_ca
-uses_unnecessary_blocking_on_T1.png>]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...xtwidth]{An_example_of_priority_inversion}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Reference `fig: Example_of_schedule_under_HLP' on page 5 undefin
+
+! LaTeX Error: File `Example_of_NPP_preventing_priority_inversion' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...mple_of_NPP_preventing_priority_inversion}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[3]
+
+! LaTeX Error: File `npp_model' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...degraphics[width=0.5\textwidth]{npp_model}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `Example_in_which_NPP_causes_unnecessary_blocking_on_T1' no
+t found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...ich_NPP_causes_unnecessary_blocking_on_T1}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (hlp.tex
+
+LaTeX Warning: Reference `fig: Example_of_schedule_under_HLP' on page 4 undefin
 ed on input line 17.
 
-<images//Example_of_schedule_under_HLP.png, id=46, 790.45313pt x 559.08875pt>
-File: images//Example_of_schedule_under_HLP.png Graphic file (type png)
-<use images//Example_of_schedule_under_HLP.png>
-Package pdftex.def Info: images//Example_of_schedule_under_HLP.png  used on inp
-ut line 21.
-(pdftex.def)             Requested size: 258.0pt x 182.48653pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 21--22
- [][] 
- []
+! LaTeX Error: File `Example_of_schedule_under_HLP' not found.
 
-) (pip.tex
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...\textwidth]{Example_of_schedule_under_HLP}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Reference `fig:pip' on page 5 undefined on input line 7.
 
-<images//pip.png, id=47, 667.49374pt x 444.66125pt>
-File: images//pip.png Graphic file (type png)
-<use images//pip.png>
-Package pdftex.def Info: images//pip.png  used on input line 10.
-(pdftex.def)             Requested size: 258.0pt x 171.87021pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 10--11
- [][] 
+Underfull \hbox (badness 1655) in paragraph at lines 68--69
+\OT1/ptm/m/n/10 task, Mes-sage Dis-play, runs, call-ing the op-er-a-tion Dis-
  []
 
 
-LaTeX Warning: Reference `fig:pip_nested' on page 5 undefined on input line 15.
-
-
-<images//pip_nested.png, id=48, 668.99937pt x 470.25688pt>
-File: images//pip_nested.png Graphic file (type png)
-<use images//pip_nested.png>
-Package pdftex.def Info: images//pip_nested.png  used on input line 18.
-(pdftex.def)             Requested size: 258.0pt x 181.36159pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 18--19
- [][] 
+Underfull \hbox (badness 6842) in paragraph at lines 68--69
+\OT1/ptm/m/n/10 play.displayMsg(). Be-cause the Dis-play has a mu-tex
  []
 
+[4]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+! LaTeX Error: File `hlp_model' not found.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...degraphics[width=0.5\textwidth]{hlp_model}
+                                                  
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Reference `fig:tpi' on page 5 undefined on input line 23.
-
-<images//tpi.png, id=49, 686.565pt x 436.63126pt>
-File: images//tpi.png Graphic file (type png)
-<use images//tpi.png>
-Package pdftex.def Info: images//tpi.png  used on input line 26.
-(pdftex.def)             Requested size: 258.0pt x 164.0761pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 26--27
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:Example_of_chained_blocking' on page 5 undefined 
-on input line 56.
-
-<images//Example_of_chained_blocking.png, id=50, 667.49374pt x 288.07625pt>
-File: images//Example_of_chained_blocking.png Graphic file (type png)
-<use images//Example_of_chained_blocking.png>
-Package pdftex.def Info: images//Example_of_chained_blocking.png  used on input
- line 59.
-(pdftex.def)             Requested size: 258.0pt x 111.34706pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 59--60
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:Example_of_deadlock' on page 5 undefined on input
- line 66.
-
-<images//Example_of_deadlock.png, id=51, 1116.17pt x 498.86375pt>
-File: images//Example_of_deadlock.png Graphic file (type png)
-<use images//Example_of_deadlock.png>
-Package pdftex.def Info: images//Example_of_deadlock.png  used on input line 69
-.
-(pdftex.def)             Requested size: 258.0pt x 115.30714pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 69--70
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (pcp.tex [5 <./images//Example_of_schedule_under_HLP.png> <./images//pip.png>
-]))
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+))
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 []\OT1/ptm/m/n/8 \Real-time sys-tems overview and ex-am-ples," In-tel. [On-line
 ].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 \OT1/ptm/m/n/8 Avail-able: https://www.intel.com/content/www/us/en/robotics/rea
 l-
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 79--80
+Underfull \hbox (badness 2790) in paragraph at lines 77--78
 \OT1/ptm/m/n/8 [On-line]. Avail-able: https://www.geeksforgeeks.org/characteris
 tics-of-
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 81--82
+Underfull \hbox (badness 1484) in paragraph at lines 79--80
 []\OT1/ptm/m/n/8 \Terminology and no-ta-tion," Ter-mi-nol-ogy and No-ta-tion |.
  [On-
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 81--82
+Underfull \hbox (badness 1675) in paragraph at lines 79--80
 \OT1/ptm/m/n/8 line]. Avail-able: https://cmte.ieee.org/tcrts/education/termino
 logy-and-
  []
@@ -608,8 +563,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <./images//pip_nested.png> <./images//tpi.png> <./images//Example_of_chained
-_blocking.png> <./images//Example_of_deadlock.png>] (main.aux)
+[5
+
+] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -618,29 +574,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5114 strings out of 478582
- 82355 string characters out of 2854159
- 386262 words of memory out of 3000000
- 23222 multiletter control sequences out of 15000+600000
- 508952 words of font info for 111 fonts, out of 8000000 for 9000
+ 4678 strings out of 478583
+ 75777 string characters out of 2854185
+ 387003 words of memory out of 3000000
+ 22813 multiletter control sequences out of 15000+600000
+ 499116 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,62p,1314b,332s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts
-/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
-r8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 847990 bytes).
-PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Output written on main.dvi (5 pages, 34568 bytes).
