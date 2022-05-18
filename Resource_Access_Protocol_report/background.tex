@@ -1,0 +1,170 @@
+%task
+
+%scheduling
+%classification
+%-preemtion
+%-non-preemtion
+%-dynamic
+%-static
+%-online
+%periodic
+%schedubility test
+
+%constraint
+%-timming
+%-resource
+%share resource
+%problem
+%solution (resource constarint)
+
+\section{Background}
+In this section we will describe the concept and terms that are dominant in this research paper.
+
+\subsection{Task}
+
+According to \cite{b4}- "Task is a sequence of instructions that, in the absence of other activities, is continuously executed by the processor until completion."
+
+Task, thread, job and process  are the basic component in task scheduling. At the level of scope of this paper, the term process and thread have the same definition as task. 
+
+Example of task could be writing or reading a variable's value. Some task have its instance called Job as defined in \cite{b4}-"Job is an instance of a task executed on a specific input data". 
+
+Next I will explain how tasks are executed.
+
+
+\subsection{Scheduling Policy and Scheduling Algorithm }
+
+
+In real time system, more than one task that are concurrent, are handled even in system with uni-processor. To realize it,  the task are executed in order using defined algorithm called scheduling algorithm. For that reasons many scheduling algorithm have been proposed such as Earliest Deadline First , Earliest Deadline Late serve and many more. The task are ordered by assigning their priority through set of predefined criterion called scheduling policy.
+
+Considering that the schedule algorithm handles more than one task, now we will extend the definition of a task correspond to their state as listed in the list below.
+
+\begin{itemize}
+\item A task that could potentially execute on the CPU can be either in execution (if it has been selected by the scheduling algorithm) or waiting for the CPU (if another task is executing)\cite{b5}.
+
+\item A task that can potentially execute on the processor, independently on its actual availability, is called an active task\cite{b5}.
+
+\item A task waiting for the processor is called a ready task, whereas the task in execution is called a running task\cite{b5}.
+
+\item All ready tasks waiting for the processor are kept in a queue, called ready queue\cite{b5}.
+
+\end{itemize}
+
+\subsection{Classification of Scheduling Algorithms}
+
+In this subtopic we will only focus on important classification of scheduling algorithm that are related to the scope of this research paper. 
+
+\begin{itemize}
+\item Preemptive: running task can be interrupted at any time.
+\item Non-preemptive: a task, once started is executed until completion
+\item Static: scheduling decisions are based on fixed parameters (off-line) .
+\item Dynamic: scheduling decisions are based on parameters that change during system evolution.
+\item Off-line : Scheduling algorithm is performed on the entire task set before start of system. Calculated schedule is executed by dispatcher. 
+\item On-line : scheduling decisions are taken at run-time every time a task enters or leaves the system.
+\item Optimal : the algorithm minimizes some given cost function, alternatively : it may fail to meet a deadline only if no other algorithm of the same class can meet it.
+\item Heuristic : algorithm that tends to find the optimal schedule but does not guarantee to find it
+
+\end{itemize}
+
+
+\subsection{Periodic and Aperiodic Task}
+
+A task can be periodic or aperiodic base on the way it is activated. Their definition are listed below according to \cite{b4}
+\begin{itemize}
+\item Periodic Task: a task in which jobs are activated at regular intervals of time, such that the activation of consecutive jobs is separated by a fixed interval of time, called the task period.
+\item Aperiodic Task: a task in which jobs may be activated at arbitrary time intervals.
+\end{itemize}
+
+The topic of this paper is limited to periodic tasks. Figure \ref{fig:periodic} shows an example of periodic task.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{periodic}
+    \caption{periodic task \cite{b5}}
+    \label{fig:periodic}
+\end{figure}
+
+\subsection{Task Constraint}
+
+Task constraints are rules that are used by the scheduling algorithm to set  priority for each task. There are 3 main type of task constraint and they are:
+
+\begin{itemize}
+\item Timing constraint
+\item Precedence constraint
+\item Resource constraint
+\end{itemize}
+
+Next we will explain more detail about timing constraint and resource constraint and how they are related to this paper topic. Precedence constraint is not covered in this paper. 
+
+\subsubsection{Timing Constraint}
+
+One of the timing constraint that are essential in this paper is deadline. There is two type of deadline:
+\begin{itemize}
+\item Relative Deadline: the longest interval of time within which any job should complete its execution\cite{b4}.
+\item Absolute Deadline (of a job): the time at which a specific job should complete its execution\cite{b4}.
+\end{itemize}
+
+Deadline of a task or job could be missed if concurrent tasks are not well handled. For that reasons, we should ensure that our real time system is well predicted. This is why we have another constraints including resource constraint that will be explain in the next subsection to solve problem regarding the predictability of the system. With time constraint we also can characterize real time system into three category :
+\begin{itemize}
+\item Hard Real Time System - failed to met the deadline can cause catastrophic event 
+\item Soft Real Time System - failed to met the deadline only cause the degradation of the system 
+\item Firm Real Time System - failed to met the deadline only cause the production of useless output 
+\end{itemize}
+
+Hard real time is the main focus in this research paper.
+\subsubsection{Resource Constraint}
+
+As mentioned before, another important constraint related to this topic is resource constraint. First we need to understand what resource means in this paper.
+
+According to \cite{b5} - "resource is any software structure that can be used by the process to advance its execution. Typically, a resource can be a data structure, a set of variables, a main memory area, a file, a piece of program, or a set of registers of a peripheral device. A resource dedicated to a particular process is said to be private, whereas a resource that can be used by more tasks is called a shared resource."
+
+Many shared resources do not allow concurrent access by competing processes in order to ensure data consistency, and instead require mutual exclusion. This means that if another task is within R modifying its data structures, a task cannot access R. R is referred to as a mutually exclusive resource in this scenario.  A piece of code executed under mutual exclusion constraints is called a critical section. This can be illustrate in figure \ref{fig:Two_tasks_sharing} where R is the mutually exclusive resource, $ \tau_{1} $ and $\tau_{2} $ are two distinct task.
+
+In figure \ref{fig:Example_of_schedule_creating_data_inconsistency} we can see the data inconsistency without mutual exclusion
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Two_tasks_sharing}
+    \caption{ Two tasks sharing a buffer with two variables. \cite{b5}}
+    \label{fig:Two_tasks_sharing}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Example_of_schedule_creating_data_inconsistency}
+    \caption{Example of schedule creating data inconsistency. \cite{b5}}
+    \label{fig:Example_of_schedule_creating_data_inconsistency}
+\end{figure}
+
+Semaphore is one of the very well known example of mechanism for synchronization provided by operating system. Each critical section must begin with wait(S) primitive and end with signal(s) primitive where s is a binary semaphore as shown in figure \ref{fig:Structure}. If a task want to access a resource that currently accessed by another task, that task must wait until signal(S) is executed by the previous task as illustrated in figure \ref{fig:semaphore} and the states of the task are shown in figure \ref{fig:state}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Structure}
+    \caption{Structure of two tasks that share a mutually exclusive resource protected by
+a semaphore. \cite{b5}}
+    \label{fig:Structure}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{semaphore}
+    \caption{Example of schedule when the resource is protected by a semaphore.. \cite{b5}}
+    \label{fig:semaphore}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{state}
+    \caption{Waiting state caused by resource constraints. \cite{b5}}
+    \label{fig:state}
+\end{figure}
+
+
+
+\subsection{Schedulability}
+
+Before we considering to implement resource access protocol it is important to make sure that all task are schedulable or a schedule is feasible on the set of task. This can be done through scheduability test. This paper will not explain about scheduability test since all task already considered as schedulable. More detail about scheduability test can be found in \cite{b5}.
+
+
+
+
+
