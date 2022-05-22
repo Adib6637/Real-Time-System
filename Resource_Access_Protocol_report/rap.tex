@@ -8,7 +8,7 @@ Now we will discuss 2 main resource access protocol for scheduling algorithm han
 
 \end{itemize}
 
-The first protocol is only for non-preemprtive scheduling and the second protocol is for preemtive scheduling. The following list are the important notation that I will use in explaining each protocol. The main idea about those protocols is to avoid priority invention, so that the blocking time experienced by the task that have the highest priority by lower priority task will also be discussed for each protocol.
+ The following list are the important notation that I will use in explaining each protocol. The main idea about those protocols is to reduce the priority invention problem, so that the blocking time experienced by the task that have the highest priority by lower priority task will also be discussed for each protocol.
 
 \begin{itemize}
 \item $ B_{i} $ denotes the maximum blocking time task $ \tau_{i} $ can experience.
@@ -22,14 +22,3 @@ The first protocol is only for non-preemprtive scheduling and the second protoco
 \input{hlp}
 
 
-
-%\item $ \sigma_{i} $ denotes the set of semaphores used by $ \tau_{i} $.
-%\item $ \sigma_{i,j} $ denotes the set of semaphores that can block $ \tau_{i} $, used by the lower-priority task $ \tau_{j} $ .
-%\item $ \gamma_{i,j} $ denotes the set of the longest critical sections that can block $ \tau_{i} $, accessed by the lower %priority task $ \tau_{j} $ . That is,
-%\begin{center}
-%$ \gamma_{i}=\{Z_{j,k} | P_{j}<P_{i}$ and $(S_{k}\geq \sigma_{i,j}) \} $
-%\end{center}
-%\item $ \gamma_{i}$ denotes the set of all the longest critical sections that can block $ \tau_{i} $. That is,
-%\begin{center}
-%$ \sigma_{i} =\underset{j:P_{j}>P_{i}}{\cup} \gamma_{i,j}$
-%\end{center}
