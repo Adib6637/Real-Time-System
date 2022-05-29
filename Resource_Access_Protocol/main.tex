@@ -12,6 +12,10 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{stackengine}
+\newcommand\citeequation[2]{%
+  \stackengine{0pt}{$\displaystyle#1$}{\makebox[\linewidth]{\hfill \cite{#2}\kern20pt}}
+    {O}{c}{F}{T}{L}
+}
 \stackMath
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -83,6 +87,6 @@ I would like to express my very great appreciation to Dr Stefan Henkler  for his
 
 \bibliographystyle{plain-annote}
 
-\bibliography{ref} 
+\bibliography{reference_latex/ref} 
 \cite{*}
 \end{document}
