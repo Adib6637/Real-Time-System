@@ -27,13 +27,13 @@ Since the priority of lower priority task $\tau_{j}$ is raised as soon as the ta
  
 \subsection{Blocking Time Computation}
 
-The total of critical section of lower priority task $\tau_{j}$ blocking a higher priority task $\tau_{i}$ is reduced by adding a new parameter as shown below. Means that the highest priority task that didn't want to use the resource could not be blocked by the lower priority task that are currently using the resource.
+The total of critical section of lower priority task $\tau_{j}$ blocking a higher priority task $\tau_{i}$ is reduced by adding a new parameter as shown below. Means that the highest priority task that did not want to use the resource could not be blocked by the lower priority task that are currently using the resource.
 
 \begin{equation}
 \citeequation{\gamma_{i}=\{Z_{j,k} | P_{j}<P_{i} \text{   and } C(R_{k})\geq P_{i} \}}{b5}\label{eq3}
 \end{equation}
 
-According to \cite{b5} - "Under HLP, a task $ \tau_{i} $ can be blocked, at most, for the duration of a single critical section belonging to the set $ \gamma_{i} $ and this theorem is proved by contradiction".  
+According to \cite{b5} - "Under HLP, a task $ \tau_{i} $ can be blocked, at most, for the duration of a single critical section belonging to the set $ \gamma_{i} $".  
 
 As shown in ``Fig. \ref{fig:Example_of_schedule_under_HLP}'', $ \tau_{i} $ can be blocked at maximum once, means that
 
@@ -55,7 +55,7 @@ In this section, I will explain the sample model of HLP that I made. Our aim now
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{sample_model_with_hlp}
-    \caption{}
+    \caption{Sample model with HLP}
     \label{fig:sample_model_with_hlp}
 \end{figure}
 
