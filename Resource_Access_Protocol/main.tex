@@ -5,6 +5,8 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{url}
+%\usepackage[authoryear]{natbib}
+%\usepackage{filecontents}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \usepackage{textcomp}
@@ -32,7 +34,7 @@ sheikh-muhammad-adib.bin-sh-abu-bakar@stud.hshl.de}
 \input{abstract.tex}
 
 \begin{IEEEkeywords}
-real time system, resource, protocol 
+real time system, resource access protocol 
 \end{IEEEkeywords}
 
 \input{introduction.tex}
@@ -78,20 +80,9 @@ real time system, resource, protocol
 
 I would like to express my very great appreciation to Dr Stefan Henkler  for his valuable and constructive suggestions during the planning and development of this research work. His willingness to give his time so generously has been very much appreciated.
 
-\begin{thebibliography}{00}
 
-\bibitem{b1}"IEEE Standard for a Real-Time Operating System (RTOS) for Small-Scale Embedded Systems," in IEEE Std 2050-2018 , vol., no., pp.1-333, 24 Aug. 2018, doi: 10.1109/IEEESTD.2018.8445674.
+\bibliographystyle{plain-annote}
 
-\bibitem{b2} “Real-time systems overview and examples,” Intel. [Online]. Available: https://www.intel.com/content/www/us/en/robotics/real-time-systems.html. [Accessed: 04-May-2022]. 
-
-\bibitem{b3}“Characteristics of real-time systems,” GeeksforGeeks, 04-May-2020. [Online]. Available: https://www.geeksforgeeks.org/characteristics-of-real-time-systems/. [Accessed: 04-Apr-2022]. 
-
-\bibitem{b4} “Terminology and notation,” Terminology and Notation |. [Online]. Available: https://cmte.ieee.org/tcrts/education/terminology-and-notation/. [Accessed: 04-Apr-2022]. 
-
-\bibitem{b5} G. C. Buttazzo, "Hard real-time computing systems: Predictable scheduling algorithms and applications". New York: Springer, 2011. 
-
-\bibitem{b6} B. P. Douglass, Real-time design patterns: Robust Scalable Architecture for real-time systems. Boston: Addison-Wesley, 2003. 
-
-
-\end{thebibliography}
+\bibliography{ref} 
+\cite{*}
 \end{document}

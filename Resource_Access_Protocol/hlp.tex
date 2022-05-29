@@ -1,4 +1,5 @@
 \section{Highest Locker Priority}
+In this section, I will explain about Highest Locker Priority protocol.
 
 \subsection{Definition}
 
@@ -8,15 +9,15 @@ Highest Locker Priority (HLP) is the improvement of the previous protocol to all
  $p_{j}(R_{k})=\underset{h}{\mathrm{max}} \{P_{h}| \tau_{h}$ uses $R_{k}\}  $ \cite{b5}
 \end{center}
 
-whereas the priority of task, $\tau_{j}$ that are currently accessing the resource, $R_{k}$ in increased to the maximum only among the task. This dynamic priority then set back to its nominal value $P_{j}$ when the task leave its critical section. The maximum raised priority of a task $\tau_{j}$ is called priority ceiling $ C(R_{k}) $ and computed off-line.  The maximum priority $ C(R_{k}) $ of the tasks sharing $ R_{k} $ is the computed online such
+where the priority of task, $\tau_{j}$ that are currently accessing the resource, $R_{k}$ is increased to the maximum only among the tasks that want to access the resource. This dynamic priority then set back to its nominal value $P_{j}$ when the task leave its critical section. The maximum raised priority of a task $\tau_{j}$ is called priority ceiling $ C(R_{k}) $ and computed off-line.  The maximum priority $ C(R_{k}) $ of the tasks sharing $ R_{k} $ is the computed online such
 
 \begin{center}
 $C(R_{k})\stackrel{def}{=}\underset{h}{\mathrm{max}} \{P_{h}| \tau_{h}$ uses $R_{k}\}  $ \cite{b5}
 \end{center}
 
-Since the priority of lower priority task $\tau_{j}$ is raised as soon as the task entering $ R_{k} $, this protocol also known as Immediate Priority Ceiling. This protocol can be visualized as in figure \ref{fig:Example_of_schedule_under_HLP} where task $ \tau_{1} $ have highest priority and task $ \tau_{3} $ is the first task arrived.
+Since the priority of lower priority task $\tau_{j}$ is raised as soon as the task entering $ R_{k} $, this protocol also known as Immediate Priority Ceiling. This protocol can be visualized as in Figure \ref{fig:Example_of_schedule_under_HLP} where task $ \tau_{1} $ have the highest priority and task $ \tau_{3} $ is the first task arrived.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{Example_of_schedule_under_HLP}
     \caption{ Example of schedule under HLP, where $ p3 $ is raised at the level $ C(R) = P_{2} $ as soon as $ \tau_{3} $ starts using resource R \cite{b5}}
@@ -34,13 +35,13 @@ $ \gamma_{i}=\{Z_{j,k} | P_{j}<P_{i} $ and $ C(R_{k})\geq P_{i} \} $ \cite{b5}
 
 According to \cite{b5} - "Under HLP, a task $ \tau_{i} $ can be blocked, at most, for the duration of a single critical section belonging to the set $ \gamma_{i} $ and this theorem is proved by contradiction".  
 
-As shown in figure \ref{fig:Example_of_schedule_under_HLP}, $ \tau_{i} $ can be blocked at maximum once, means that
+As shown in Figure \ref{fig:Example_of_schedule_under_HLP}, $ \tau_{i} $ can be blocked at maximum once, means that
 
 \begin{center}
 $B_{i}(R_{k})=\underset{j,k}{\mathrm{max}} \{ \delta_{j,k}-1 | Z_{j,k} \in \gamma_{i}\}  $ \cite{b5}
 \end{center}
 
-We need to minus one unit of time because the lower priority task $ \tau_{j} $ need to access $ R_{k} $ atleast one unit of time earlier than $ \tau_{i} $ to block it.
+We need to minus one unit of time because the lower priority task $ \tau_{j} $ need to access $ R_{k} $ at least one unit of time earlier than $ \tau_{i} $ to block it.
 
 \subsection{Implementation Strategies} 
 
@@ -51,7 +52,7 @@ According to \cite{b6} - "Fewer RTOSs support the Highest Locker Pattern more th
 In this section, I will explain the sample model of HLP that I made. Our aim now is to solve the problem in Figure\ref{fig:sample_model_problem_npp} by applying HLP. As the result, the dynamic priority of task that currently accessing the resource, $ R_{d}$, which is the display is risen to the highest only among the task that want to access the resource, $ R_{d}$. This solution is illustrated in Figure \ref{fig:sample_model_with_hlp}. So, the task $ \tau_{t}$ can be preempted by the highest priority task, the alarm task, $\tau_{a}$ even though the task is currently accessing the resource $ R_{d}$.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{sample_model_with_hlp}
     \caption{}
