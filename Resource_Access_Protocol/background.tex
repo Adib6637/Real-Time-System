@@ -76,7 +76,7 @@ A task can be periodic or aperiodic, base on the way it is activated. Their defi
 \item Aperiodic Task: a task in which jobs may be activated at arbitrary time intervals\cite{b4}.
 \end{itemize}
 
-The resource access protocol, which we shall cover later, only handles periodic tasks. A periodic task is depicted in Figure \ref{fig:periodic}. As previously stated, a scheduling algorithm is used to handle many tasks by executing them in the order of their priority. The constraint they have influences their priority. Following that, I will go through some of the most important task constraints.
+The resource access protocol, which we shall cover later, only handles periodic tasks. A periodic task is depicted in ``Fig. \ref{fig:periodic}''. As previously stated, a scheduling algorithm is used to handle many tasks by executing them in the order of their priority. The constraint they have influences their priority. Following that, I will go through some of the most important task constraints.
 
 \begin{figure}[ht]
     \centering
@@ -137,7 +137,7 @@ Resource constraint that we are focus on is the mechanism that avoid more than o
     \label{fig:Example_of_schedule_creating_data_inconsistency}
 \end{figure}
 
-Various synchronization mechanisms, such as \textit{semaphore}, were devised to prevent this problem. Each critical section in this mechanism must start with wait(s) primitive and end with signal(s) primitive, where s is a binary semaphore, as shown in ``Fig. \ref{fig:Structure}'', and the state of a task may be extended thanks to this mechanism, as shown in ``Fig. \ref{fig:state}''. If another job is presently using the resource, the task will be unable to access it until the signal(s) is executed. As seen in ``Fig. \ref{fig:semaphore}'', this approach can assure data consistency. For the sake of simplicity, we will refer to exclusive resources as "resources" throughout this work.
+Various synchronization mechanisms, such as \textit{semaphore}, were devised to prevent this problem. Each critical section in this mechanism must start with wait(s) primitive and end with signal(s) primitive, where s is a binary semaphore, as shown in ``Fig. \ref{fig:Structure}'', and the state of a task may be extended thanks to this mechanism, as shown in ``Fig. \ref{fig:state}''. If another job is presently using the resource, the task will be unable to access it until the signal(s) is executed. As seen in ``Fig. \ref{fig:semaphore}'', this approach can assure data consistency. For the sake of simplicity, we will refer to exclusive resources as "resources" throughout this paper.
 
 \begin{figure}[ht]
     \centering
@@ -166,6 +166,6 @@ a semaphore. \cite{b5}}
 
 \subsection{Schedulability}
 
-Before we contemplate implementing a resource access protocol, we must ensure that all tasks are schedulable or that a schedule on the set of tasks is feasible. A scheduability test can be used to accomplish this. The scheduability test will not be discussed in this paper because all tasks are already considered schedulable. \cite{b5} further information on the scheduability test.
+Before we contemplate implementing a resource access protocol, we must ensure that all tasks are schedulable or that a schedule on the set of tasks is feasible. A scheduability test can be used to accomplish this. The scheduability test will not be discussed in this paper because all tasks are already considered schedulable. Further information on the scheduability test can be found in \cite{b5}.
 
 In the following section, we'll look at an issue that developed as a result of the suggested synchronization mechanism, which has an impact on the predictability of a real-time system.
