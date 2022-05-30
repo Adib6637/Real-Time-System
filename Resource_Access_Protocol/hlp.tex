@@ -9,7 +9,7 @@ Highest Locker Priority (HLP) is the improvement of the previous protocol to all
    \citeequation{p_{j}(R_{k})=\underset{h}{\mathrm{max}} \{P_{h}| \tau_{h} \text{   uses } R_{k}\}}{b5}\label{eq1}
 \end{equation}
 
-where the priority of task, $\tau_{j}$ that are currently accessing the resource, $R_{k}$ is increased to the maximum only among the tasks that want to access the resource. This dynamic priority then set back to its nominal value $P_{j}$ when the task leave its critical section. The maximum raised priority of a task $\tau_{j}$ is called priority ceiling $ C(R_{k}) $ and computed off-line.  The maximum priority $ C(R_{k}) $ of the tasks sharing $ R_{k} $ is the computed online such
+where the priority of task, $\tau_{j}$ that are currently accessing the resource, $R_{k}$ is increased to the maximum only among the tasks that want to access the resource. This dynamic priority then set back to its nominal value $P_{j}$ when the task leaves its critical section. The maximum raised priority of a task $\tau_{j}$ is called priority ceiling $ C(R_{k}) $ and computed off-line.  The maximum priority $ C(R_{k}) $ of the tasks sharing $ R_{k} $ is the computed online such
 
 \begin{equation}
 \citeequation{C(R_{k})\stackrel{def}{=}\underset{h}{\mathrm{max}} \{P_{h}| \tau_{h}\text{  uses }  R_{k}\}}{b5}\label{eq2}
@@ -33,7 +33,7 @@ The total of critical section of lower priority task $\tau_{j}$ blocking a highe
 \citeequation{\gamma_{i}=\{Z_{j,k} | P_{j}<P_{i} \text{   and } C(R_{k})\geq P_{i} \}}{b5}\label{eq3}
 \end{equation}
 
-According to \cite{b5} - "Under HLP, a task $ \tau_{i} $ can be blocked, at most, for the duration of a single critical section belonging to the set $ \gamma_{i} $".  
+According to \cite{b5}---``Under HLP, a task $ \tau_{i} $ can be blocked, at most, for the duration of a single critical section belonging to the set $ \gamma_{i} $".  
 
 As shown in ``Fig. \ref{fig:Example_of_schedule_under_HLP}'', $ \tau_{i} $ can be blocked at maximum once, means that
 
@@ -41,15 +41,15 @@ As shown in ``Fig. \ref{fig:Example_of_schedule_under_HLP}'', $ \tau_{i} $ can b
 \citeequation{B_{i}(R_{k})=\underset{j,k}{\mathrm{max}} \{ \delta_{j,k}-1 | Z_{j,k} \in \gamma_{i}\}}{b5}\label{eq4}  
 \end{equation}
 
-We need to minus one unit of time because the lower priority task $ \tau_{j} $ need to access $ R_{k} $ at least one unit of time earlier than $ \tau_{i} $ to block it.
+We need to minus one unit of time because the lower priority task $ \tau_{j} $ needs to access $ R_{k} $ at least one unit of time earlier than $ \tau_{i} $ to block it.
 
 \subsection{Implementation Strategies} 
 
-According to \cite{b6} - "Fewer RTOSs support the Highest Locker Pattern more than the basic Priority Inheritance Pattern. The implementation of this pattern  is fairly straightforward, with the addition of priority ceiling attributes in the Shared Resource. When the mutex is locked, it must notify the Scheduler to elevate the priority of the locking task to that resource's priority ceiling."
+According to \cite{b6}---``Fewer RTOSs support the Highest Locker Pattern more than the basic Priority Inheritance Pattern. The implementation of this pattern  is fairly straightforward, with the addition of priority ceiling attributes in the Shared Resource. When the mutex is locked, it must notify the Scheduler to elevate the priority of the locking task to that resource's priority ceiling."
 
 \subsection{Sample Model} 
 
-In this section, I will explain the sample model of HLP that I made. Our aim now is to solve the problem in ``Fig. \ref{fig:sample_model_problem_npp}'' by applying HLP. As the result, the dynamic priority of task that currently accessing the resource, $ R_{d}$, which is the display is risen to the highest only among the task that want to access the resource, $ R_{d}$. This solution is illustrated in ``Fig. \ref{fig:sample_model_with_hlp}'' . So, the task $ \tau_{t}$ can be preempted by the highest priority task, the alarm task, $\tau_{a}$ even though the task is currently accessing the resource $ R_{d}$.
+In this section, I will explain the sample model of HLP that I made. Our aim now is to solve the problem in ``Fig. \ref{fig:sample_model_problem_npp}'' by applying HLP. As the result, the dynamic priority of task that currently accessing the resource, $ R_{d}$, which is the display is risen to the highest only among the tasks that want to access the resource, $ R_{d}$. This solution is illustrated in ``Fig. \ref{fig:sample_model_with_hlp}''. So, the task $ \tau_{t}$ can be preempted by the highest priority task, the alarm task, $\tau_{a}$ even though the task is currently accessing the resource $ R_{d}$.
 
 
 \begin{figure}[ht]
@@ -62,7 +62,7 @@ In this section, I will explain the sample model of HLP that I made. Our aim now
 
 \subsection{Problem Arise}
 
-As claimed by \cite{b5} -"despite the fact that this algorithm improves the previous algorithm, it still could produce some unnecessary blocking. This algorithm block a task at the time it attempts, before it actually require a resource \cite{b5}. If a critical section is contained only in one branch of a conditional statement, then the task could be unnecessarily blocked, since during execution it could take the branch without the resource."
+As claimed by \cite{b5}---``despite the fact that this algorithm improves the previous algorithm, it still could produce some unnecessary blocking. This algorithm block a task at the time it attempts, before it actually require a resource \cite{b5}. If a critical section is contained only in one branch of a conditional statement, then the task could be unnecessarily blocked, since during execution it could take the branch without the resource."
  
 
 

@@ -1,20 +1,20 @@
 \section{Resource Access Protocol}
 
-Now we will discuss 2 main resource access protocol for scheduling algorithm handling periodic tasks which are:
+Now we will discuss 2 main resource access protocols for scheduling algorithm handling periodic tasks, which are:
 
 \begin{itemize}
 \item Non-Preemptive Protocol
 \item Highest Locker Priority
 \end{itemize}
 
- The following list are the important notation that I will use in explaining each protocol. The main idea about those protocols is to reduce the priority invention problem, so that the blocking time experienced by the task that have the highest priority by lower priority task will also be discussed for each protocol.
+ The following list is the important notation that I will use in explaining each protocol \cite{b5}. The main idea about those protocols is to reduce the priority invention problem, so that the blocking time experienced by the task that has the highest priority by lower priority task will also be discussed for each protocol.
 
 \begin{itemize}
-\item $ B_{i} $ denotes the maximum blocking time task $ \tau_{i} $ can experience \cite{b5}.
-\item $ z_{i,k} $ denotes a generic critical section of task $ \tau_{i} $ guarded by semaphore $ S_{k} $ \cite{b5}.
-\item  $ Z_{i,k} $ denotes the longest critical section of task $ \tau_{i} $ guarded by semaphore $ S_{k} $ \cite{b5}.
-\item $ \delta_{i,k} $ denotes the duration of $ Z_{i,k} $ \cite{b5}.
-\item $ z_{i,h} \subset z_{i,k} $ indicates that $ z_{i,h} $ is entirely contained in $ z_{i,k} $ \cite{b5}.
+\item $ B_{i} $ denotes the maximum blocking time a task $ \tau_{i} $ can experience.
+\item $ z_{i,k} $ denotes a generic critical section of task $ \tau_{i} $ guarded by semaphore $ S_{k} $ .
+\item  $ Z_{i,k} $ denotes the longest critical section of task $ \tau_{i} $ guarded by semaphore $ S_{k} $.
+\item $ \delta_{i,k} $ denotes the duration of $ Z_{i,k} $.
+\item $ z_{i,h} \subset z_{i,k} $ indicates that $ z_{i,h} $ is entirely contained in $ z_{i,k} $.
 \end{itemize}
 
 \input{npp}
